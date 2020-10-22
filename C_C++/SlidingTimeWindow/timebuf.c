@@ -1,4 +1,4 @@
-#include <vcruntime_string.h>
+#include <string.h>
 
 #define MAX_ENTRIES 1024
 
