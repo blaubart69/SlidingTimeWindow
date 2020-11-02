@@ -1,4 +1,4 @@
-#include <string.h>
+#include <vcruntime_string.h>
 
 #define MAX_ENTRIES 1024
 
@@ -101,13 +101,14 @@ void tb_set(TIMEBUFFER* _tb, long int timestamp, int onEvent, long int* onTicks,
 
             } /* endif */
 
-        } /* endfor */
+        } /* endfor */  
 
     } /* endif */
 
     *onTicks  = _tb->ticks[1];
     *offTicks = _tb->ticks[0];
 }
+/*
 
 //=================================================================================================
 int main(int argc, char* argv[]) {
@@ -148,6 +149,6 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-
+*/
 // -=EOF=-
 
